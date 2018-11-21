@@ -1,12 +1,11 @@
 # copy-pics-vids-to-folder
-Copy  .mp4, .mov, .mwv, .flv, .png, .img and .jpg files from a target folder to a disgnated folder.
+Copy: mp4,mov, flv, png, jpg, and img files from a target folder to a disgnated folder.This is can modified by adding more desired files such as pdf, mp3 or removing others. 
 
- make sure to replace destination folder with your own path
 ## Creating a file in the terminal
 
 In the terminal you can create a file to store the command to reuse multiple times.
 
-Enter `touch yourfilename` to create the file
+Enter `touch yourfilename` to create the file. Replace `yourfilename` with whatever name you like.
 
 Next `sudo nano yourfilenmae` to begin editing it. Copy and paste the code below.
 
@@ -17,7 +16,9 @@ Now we need to move the file to `/usr/bin/` with `sudo mv yourfilename /usr/bin`
 Finally we need to change the permission on it so it can be called from anywhere.
 Run `sudo chmod +x yourfilename`
 
-## Open terminal in folder you wish to copy files from
+### Open the terminal in the folder you wish to copy files from, and copy/paste this code in
+
+### Remove `#!/bin/bash` if you are just using this once, and change `/your/folder/destination` with the path to your folder
 ```
 #!/bin/bash
 
